@@ -3,7 +3,7 @@
 # Function to check for suspicious network connections
 check_network() {
     # Use netstat to get a list of currently active connections
-    connections=$(netstat -tuln)
+    connections=$(netstat -tun)
 
     # Check each connection for suspicious activity
     while read -r line; do
